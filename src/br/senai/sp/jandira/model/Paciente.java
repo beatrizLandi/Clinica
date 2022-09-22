@@ -5,7 +5,7 @@ public class Paciente {
 //
 	private String nome;
 	private String email;
-	private String Rg;
+	private String RG;
 	private String CPF;
 	private String telefone;
 	private String sexo;
@@ -67,11 +67,11 @@ public class Paciente {
 		return RG;
 	}
 
-	public void setRG(String rG) {
-		RG = rG;
+	public void setRG(String RG) {
+		RG = RG;
 	}
 
-	private String RG;
+	
 
 	public String getPlanoDeSaude() {
 		return planoDeSaude;

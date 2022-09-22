@@ -1,12 +1,14 @@
 package br.senai.sp.jandira;
 
 import java.io.ObjectInputStream.GetField;
+
 import java.time.LocalDate;
 import java.time.LocalTime;
 import br.senai.sp.jandira.model.Agenda;
 import br.senai.sp.jandira.model.Especialidade;
 import br.senai.sp.jandira.model.Estados;
 import br.senai.sp.jandira.model.Medico;
+import br.senai.sp.jandira.model.Paciente;
 
 import javax.swing.JOptionPane;
 import javax.swing.plaf.metal.MetalIconFactory.PaletteCloseIcon;
@@ -16,7 +18,7 @@ import br.senai.sp.jandira.model.Agenda;
 import br.senai.sp.jandira.model.Endereco;
 import br.senai.sp.jandira.model.Especialidade;
 import br.senai.sp.jandira.model.Medico;
-import setSexo.Paciente;
+
 import br.senai.sp.jandira.model.PlanoSaude;
 
 public class ClinicaApp {
@@ -56,7 +58,8 @@ public class ClinicaApp {
 		// System.out.println(planoBradesco.getDadosPlano());
 
 		// JOptionPane.showMessageDialog(null, planoBradesco.getDadosPlano());
-
+		PlanoSaude plano3 = new PlanoSaude("amil");
+		
 		// endereço
 
 		Endereco endereco1 = new Endereco();
@@ -80,7 +83,7 @@ public class ClinicaApp {
 		// medico
 
 		Medico medico1 = new Medico();
-		medico1.setSexo();
+		medico1.setGenero(null);
 		medico1.setNome("Ana");
 		medico1.setCRM("999-444");
 		medico1.setDataNascimento(LocalDate.of(1997, 5, 15));
@@ -91,7 +94,7 @@ public class ClinicaApp {
 		medico1.setEspecialidades(especialidades);
 
 		Medico medico2 = new Medico();
-		medico2.setSexo("Intersex");
+		medico2.setGenero(null);
 		medico2.setNome("Alec´s");
 		medico2.setCRM("333-222");
 		medico2.setDataNascimento(LocalDate.of(1990, 7, 21));

@@ -4,7 +4,23 @@ public class PlanoSaude {
 
 	private String operadora;
 	private String tipoPlano;
+	
+	//construtor de classe
+	
+	public PlanoSaude(String Operadora) {
+		this.operadora = operadora;
+		
+	}
+	
+	public PlanoSaude(String operadora, String tipoPlano ) {
+		this.operadora=operadora;
+		this.tipoPlano=tipoPlano;
+	}
 
+	public PlanoSaude() {
+		
+	}
+	
 	public void setOperadora(String operadora) {
 		this.operadora = operadora;
 	}

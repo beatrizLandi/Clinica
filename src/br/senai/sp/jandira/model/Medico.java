@@ -8,9 +8,10 @@ public class Medico {
 
 	private String nome;
 	private LocalDate dataNascimento;
-	private String sexo;
+	private Genero genero ;
 	private Especialidade[] especialidades;
 	private String CRM;
+	
 
 	// metods especiais
 	public String getNome() {
@@ -29,12 +30,12 @@ public class Medico {
 		this.dataNascimento = dataNascimento;
 	}
 
-	public String getSexo() {
-		return sexo;
+	public Genero getGenero() {
+		return genero;
 	}
 
-	public void setSexo(String sexo) {
-		this.sexo = sexo;
+	public void setGenero(Genero genero) {
+		this.genero = genero;
 	}
 
 	public Especialidade[] getEspecialidades() {
